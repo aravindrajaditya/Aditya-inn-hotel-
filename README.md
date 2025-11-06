@@ -1,0 +1,1 @@
+adityainn_hotel
