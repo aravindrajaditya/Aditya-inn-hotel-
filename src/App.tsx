@@ -145,9 +145,9 @@ function App() {
             <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Special Discount on Direct Bookings</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Affordable Rooms in Karur<br />
-            <span className="text-amber-600">On Salem Bypass</span>
+            <span className="text-amber-600">On Salem Bypass with Restorents</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
