@@ -517,10 +517,10 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Our Guests Say
+              Rated 4.9/5 by 45+ guests on Justdial and other platforms
             </h2>
-            <p className="text-xxl text-gray-600">
-             Rated 4.9/5 by 45+ guests on Justdial and other platforms
+            <p className="text-l text-gray-600">
+             What Our Guests Say
             </p>
           </div>
 
