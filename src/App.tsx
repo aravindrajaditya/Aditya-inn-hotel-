@@ -145,21 +145,21 @@ function App() {
             <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Special Discount on Direct Bookings</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-5 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Affordable Rooms in Karur<br />
-            <span className="text-amber-400">On Salem Bypass</span>
+            <span className="text-amber-600">On Salem Bypass</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Enjoy a clean, comfortable, and affordable stay on the Salem Bypass, Karur. Whether you're traveling for business, with family, or just passing through — Aditya Inn.
+           Clean, comfortable and convenient rooms for business, family and transit travelers at Aditya Inn, near Bye Pass Roundana
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
-              Book Direct & Save
+              Call to Book Now
             </a>
             <a href="#offers" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
-              View Special Offers
+              WhatsApp for Best Price
             </a>
           </div>
 
@@ -264,10 +264,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Perfectly Located, Beautifully Designed
+              Hotel in Karur on Salem Bye Pass Road
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nestled in the vibrant heart of Karur, Aditya Inn offers the perfect blend of comfort, convenience, and cultural richness.
+              Near industrial areas, temples and shopping – ideal for business and family stays.
             </p>
           </div>
 
@@ -371,7 +371,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                   </span>
                 </div>
                 <p className="text-gray-700 mb-4 text-sm">
-                  Perfect for business travelers and solo adventurers. Clean, comfortable rooms with essential amenities.
+                  Perfect for business travelers and solo adventurers. Clean, comfortable rooms from  ₹1,500 with essential amenities.
                 </p>
                 <p className="text-sm text-gray-600 mb-4 italic">Available in AC and Non-AC options</p>
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -519,8 +519,8 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               What Our Guests Say
             </h2>
-            <p className="text-xl text-gray-600">
-              Real experiences from real travelers
+            <p className="text-xxl text-gray-600">
+             Rated 4.9/5 by 45+ guests on Justdial and other platforms
             </p>
           </div>
 
@@ -536,11 +536,11 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-amber-700 font-bold text-xl">VG</span>
+                  <span className="text-amber-700 font-bold text-xl">JD</span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">Verified Guest</p>
-                  <p className="text-sm text-gray-600">Justdial Review</p>
+                  <p className="font-bold text-gray-900">Justdial Review</p>
+                  <p className="text-sm text-gray-600">Clean rooms and great food</p>
                 </div>
               </div>
             </div>
@@ -560,7 +560,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Local Traveler</p>
-                  <p className="text-sm text-gray-600">Justdial Review</p>
+                  <p className="text-sm text-gray-600">Convenient location on Salem Bye Pass Road</p>
                 </div>
               </div>
             </div>
@@ -580,7 +580,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Business Traveler</p>
-                  <p className="text-sm text-gray-600">Verified Review</p>
+                  <p className="text-sm text-gray-600">Spacious rooms and value for money</p>
                 </div>
               </div>
             </div>
@@ -615,7 +615,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Book Today & Save
+            Call to Book Now
           </h2>
 
           <p className="text-xl mb-8 opacity-95">
@@ -624,7 +624,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="tel:+919677735969" className="bg-white text-amber-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg transform hover:scale-105 inline-block">
-              Reserve Your Room Now
+              Call to Book Now
             </a>
             <a href="tel:+919994409412" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-bold text-lg inline-block">
               Call Us: +91 96777 35969
@@ -668,7 +668,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp for Best Price</h3>
               <p className="text-gray-700 mb-2">Quick Response</p>
               <a href="https://wa.me/919677735969" className="text-green-600 font-bold text-lg hover:text-green-700">
                 Chat with us
