@@ -146,8 +146,8 @@ function App() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Your Comfort Journey<br />
-            <span className="text-amber-600">Begins Here</span>
+            Affordable Room Stay in Karur<br />
+            <span className="text-amber-600">on Salem Bypass</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
