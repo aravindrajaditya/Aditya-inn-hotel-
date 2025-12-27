@@ -133,52 +133,75 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-     <section className="relative min-h-fit md:h-screen flex items-start md:items-center justify-center overflow-hidden mt-4 md:mt-16 pt-16 md:pt-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
-        }}></div>
+<section className="relative flex justify-center overflow-hidden mt-4 md:mt-16 py-12 md:py-0 md:h-screen">
+  {/* Background Gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
+  {/* Pattern Overlay */}
+  <div
+    className="absolute inset-0 opacity-10"
+    style={{
+      backgroundImage:
+        'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+    }}
+  ></div>
 
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-amber-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 animate-pulse max-w-[95%] sm:max-w-none">
-            <Gift className="h-3.5 w-3.5 sm:h-5 sm:w-5 flex-shrink-0" />
-            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Special Discount on Direct Bookings</span>
-          </div>
+  {/* Content */}
+  <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col justify-start md:justify-center md:min-h-screen">
+    {/* Offer Badge */}
+    <div className="inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-3 sm:px-4 py-2 rounded-full mb-6 self-center">
+      <Gift className="h-4 w-4 sm:h-5 sm:w-5" />
+      <span className="font-semibold text-xs sm:text-sm md:text-base">
+        Special Discount on Direct Bookings
+      </span>
+    </div>
 
-          <h1 className="text-3xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-            Affordable Rooms in Karur<br />
-            <span className="text-amber-600">On Salem Bypass </span>
-          </h1>
+    {/* Heading */}
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+      Affordable Rooms in Karur
+      <br />
+      <span className="text-amber-600">On Salem Bypass</span>
+    </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-           Clean, comfortable and convenient rooms for business, family and transit travelers at Aditya Inn, near Bye Pass Roundana
-          </p>
+    {/* Description */}
+    <p className="text-base sm:text-lg md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+      Clean, comfortable and convenient rooms for business, family and transit
+      travelers at Aditya Inn, near Bye Pass Roundana.
+    </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
-              Call to Book Now
-            </a>
-            <a href="#offers" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
-              WhatsApp for Best Price
-            </a>
-          </div>
+    {/* CTAs */}
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+      <a
+        href="tel:+919677735969"
+        className="w-full sm:w-auto bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg"
+      >
+        Call to Book Now
+      </a>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>Best Price Guarantee</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>No Hidden Fees</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>24/7 Support</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a
+        href="#offers"
+        className="w-full sm:w-auto border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg"
+      >
+        WhatsApp for Best Price
+      </a>
+    </div>
+
+    {/* Trust Indicators */}
+    <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>Best Price Guarantee</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>No Hidden Fees</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>24/7 Support</span>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Image Carousel Section */}
       <ImageCarousel />
