@@ -133,52 +133,75 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
-        }}></div>
+<section className="relative flex justify-center overflow-hidden mt-4 md:mt-16 py-12 md:py-0 md:h-screen">
+  {/* Background Gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
+  {/* Pattern Overlay */}
+  <div
+    className="absolute inset-0 opacity-10"
+    style={{
+      backgroundImage:
+        'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+    }}
+  ></div>
 
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-amber-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 animate-pulse max-w-[95%] sm:max-w-none">
-            <Gift className="h-3.5 w-3.5 sm:h-5 sm:w-5 flex-shrink-0" />
-            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Special Discount on Direct Bookings</span>
-          </div>
+  {/* Content */}
+  <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col justify-start md:justify-center md:min-h-screen">
+    {/* Offer Badge */}
+    <div className="inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-3 sm:px-4 py-2 rounded-full mb-6 self-center">
+      <Gift className="h-4 w-4 sm:h-5 sm:w-5" />
+      <span className="font-semibold text-xs sm:text-sm md:text-base">
+        Special Discount on Direct Bookings
+      </span>
+    </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Your Comfort Journey<br />
-            <span className="text-amber-600">Begins Here</span>
-          </h1>
+    {/* Heading */}
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+      Affordable Rooms in Karur
+      <br />
+      <span className="text-amber-600">On Salem Bypass</span>
+    </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Enjoy a clean, comfortable, and affordable stay on the Salem Bypass, Karur. Whether you're traveling for business, with family, or just passing through — Aditya Inn.
-          </p>
+    {/* Description */}
+    <p className="text-base sm:text-lg md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+      Clean, comfortable and convenient rooms for business, family and transit
+      travelers at Aditya Inn, near Bye Pass Roundana.
+    </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
-              Book Direct & Save
-            </a>
-            <a href="#offers" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
-              View Special Offers
-            </a>
-          </div>
+    {/* CTAs */}
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+      <a
+        href="tel:+919677735969"
+        className="w-full sm:w-auto bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg"
+      >
+        Call to Book Now
+      </a>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>Best Price Guarantee</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>No Hidden Fees</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>24/7 Support</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a
+        href="#offers"
+        className="w-full sm:w-auto border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg"
+      >
+        WhatsApp for Best Price
+      </a>
+    </div>
+
+    {/* Trust Indicators */}
+    <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>Best Price Guarantee</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>No Hidden Fees</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Check className="h-4 w-4 text-green-600" />
+        <span>24/7 Support</span>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Image Carousel Section */}
       <ImageCarousel />
@@ -264,10 +287,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Perfectly Located, Beautifully Designed
+              Hotel in Karur on Salem Bye Pass Road
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nestled in the vibrant heart of Karur, Aditya Inn offers the perfect blend of comfort, convenience, and cultural richness.
+              Near industrial areas, temples and shopping – ideal for business and family stays.
             </p>
           </div>
 
@@ -371,7 +394,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                   </span>
                 </div>
                 <p className="text-gray-700 mb-4 text-sm">
-                  Perfect for business travelers and solo adventurers. Clean, comfortable rooms with essential amenities.
+                  Perfect for business travelers and solo adventurers. Clean, comfortable rooms from  ₹1,500 with essential amenities.
                 </p>
                 <p className="text-sm text-gray-600 mb-4 italic">Available in AC and Non-AC options</p>
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -517,10 +540,10 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Our Guests Say
+              Rated 4.9/5 by 45+ guests on Review
             </h2>
-            <p className="text-xl text-gray-600">
-              Real experiences from real travelers
+            <p className="text-2xl text-gray-600">
+             What Our Guests Say
             </p>
           </div>
 
@@ -536,11 +559,11 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-amber-700 font-bold text-xl">VG</span>
+                  <span className="text-amber-700 font-bold text-xl">JD</span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">Verified Guest</p>
-                  <p className="text-sm text-gray-600">Justdial Review</p>
+                  <p className="font-bold text-gray-900">Justdial Review</p>
+                  <p className="text-sm text-gray-600">Clean rooms and great food</p>
                 </div>
               </div>
             </div>
@@ -560,7 +583,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Local Traveler</p>
-                  <p className="text-sm text-gray-600">Justdial Review</p>
+                  <p className="text-sm text-gray-600">Convenient location on Salem Bye Pass Road</p>
                 </div>
               </div>
             </div>
@@ -580,7 +603,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">Business Traveler</p>
-                  <p className="text-sm text-gray-600">Verified Review</p>
+                  <p className="text-sm text-gray-600">Spacious rooms and value for money</p>
                 </div>
               </div>
             </div>
@@ -615,7 +638,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Book Today & Save
+            Call to Book Now
           </h2>
 
           <p className="text-xl mb-8 opacity-95">
@@ -624,7 +647,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="tel:+919677735969" className="bg-white text-amber-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg transform hover:scale-105 inline-block">
-              Reserve Your Room Now
+              Call to Book Now
             </a>
             <a href="tel:+919994409412" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-bold text-lg inline-block">
               Call Us: +91 96777 35969
@@ -668,7 +691,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp for Best Price</h3>
               <p className="text-gray-700 mb-2">Quick Response</p>
               <a href="https://wa.me/919677735969" className="text-green-600 font-bold text-lg hover:text-green-700">
                 Chat with us
