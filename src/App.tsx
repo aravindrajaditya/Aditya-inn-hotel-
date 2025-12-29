@@ -133,52 +133,178 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section style="position: relative; height: 40vh; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-top: 2.5rem; width: 100%;"
-        >
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
-        }}></div>
+    <section 
+  style={{
+    position: 'relative',
+    height: '95vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    marginTop: '2.5rem',
+    width: '100%',
+    background: 'linear-gradient(to bottom right, #fdf4f3 0%, #fee2e2 50%, #fdf4f3 100%)'
+  }}
+>
+  {/* Background pattern */}
+  <div 
+    style={{
+      position: 'absolute',
+      inset: 0,
+      opacity: 0.1,
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+      backgroundSize: '60px'
+    }}
+  />
 
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-amber-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 animate-pulse max-w-[95%] sm:max-w-none">
-            <Gift className="h-3.5 w-3.5 sm:h-5 sm:w-5 flex-shrink-0" />
-            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Best rooms from ₹1,500/night – Book direct and save</span>
-          </div>
+  {/* Content Container - Fixed for mobile */}
+  <div 
+    style={{
+      position: 'relative',
+      maxWidth: '384px',
+      margin: '0 auto',
+      textAlign: 'center',
+      padding: '1rem',
+      transform: 'scale(0.95)'
+    }}
+  >
+    {/* Promo Badge */}
+    <div 
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '0.5rem',
+        background: '#d97706',
+        color: 'white',
+        padding: '0.75rem 1.5rem',
+        borderRadius: '9999px',
+        marginBottom: '1.5rem',
+        animation: 'pulse 2s infinite',
+        maxWidth: '95%'
+      }}
+    >
+      <Gift className="h-5 w-5 flex-shrink-0" />
+      <span style={{ fontWeight: '600', fontSize: '0.875rem' }}>
+        Best rooms from ₹1,500/night – Book direct and save
+      </span>
+    </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Affordable Stay & Restaurant in Karur <span className="text-amber-600">– Salem Bypass</span>
-          </h1>
+    {/* Main Heading */}
+    <h1 
+      style={{
+        fontSize: '2.5rem',
+        fontWeight: '900',
+        color: '#111827',
+        marginBottom: '1.5rem',
+        lineHeight: '1.2'
+      }}
+    >
+      Affordable Stay & Restaurant in Karur{' '}
+      <span style={{ color: '#d97706' }}>-- Salem Bypass</span>
+    </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Clean, comfortable and convenient rooms for business, family and transit travelers at Aditya Inn, near Bye Pass Roundana.
-          </p>
+    {/* Description */}
+    <p 
+      style={{
+        fontSize: '1.25rem',
+        color: '#374151',
+        marginBottom: '2rem',
+        maxWidth: '28rem',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      }}
+    >
+      Clean, comfortable and convenient rooms for business, family and transit 
+      travelers at Aditya Inn, near Bye Pass Roundana.
+    </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
-              Call to Book Now
-            </a>
-            <a href="https://wa.me/919677735969" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
-              WhatsApp for Best Price
-            </a>
-          </div>
+    {/* CTA Buttons */}
+    <div 
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: '2rem'
+      }}
+    >
+      <a 
+        href="tel:+919677735969"
+        style={{
+          background: '#d97706',
+          color: 'white',
+          padding: '1rem 2rem',
+          borderRadius: '0.5rem',
+          fontWeight: '700',
+          fontSize: '1.125rem',
+          textDecoration: 'none',
+          boxShadow: '0 10px 15px -3px rgba(0, 0,0,0.1)',
+          display: 'inline-block',
+          transition: 'all 0.2s'
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.background = '#b45309';
+          e.target.style.transform = 'translateY(-2px)';
+          e.target.style.boxShadow = '0 20px 25px -5px rgba(0, 0,0,0.1)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.background = '#d97706';
+          e.target.style.transform = 'translateY(0)';
+          e.target.style.boxShadow = '0 10px 15px -3px rgba(0, 0,0,0.1)';
+        }}
+      >
+        Call to Book Now
+      </a>
+      <a 
+        href="https://wa.me/919677735969"
+        style={{
+          border: '2px solid #d97706',
+          color: '#d97706',
+          padding: '1rem 2rem',
+          borderRadius: '0.5rem',
+          fontWeight: '700',
+          fontSize: '1.125rem',
+          textDecoration: 'none',
+          transition: 'all 0.2s',
+          background: 'white'
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.background = '#fffbeb';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.background = 'white';
+        }}
+      >
+        WhatsApp for Best Price
+      </a>
+    </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>Best Price Guarantee</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>No Hidden Fees</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-5 w-5 text-green-600" />
-              <span>24/7 Support</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Features */}
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', fontSize: '0.875rem', color: '#4b5563' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <Check className="h-5 w-5 text-green-600" />
+        <span>Best Price Guarantee</span>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <Check className="h-5 w-5 text-green-600" />
+        <span>No Hidden Fees</span>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <Check className="h-5 w-5 text-green-600" />
+        <span>24/7 Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style jsx global>{`
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+`}</style>
 
       {/* Image Carousel Section */}
       <ImageCarousel />
