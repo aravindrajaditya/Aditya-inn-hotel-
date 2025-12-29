@@ -385,99 +385,7 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* Gallery/Experience Section */}
-      <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Hotel in Karur on Salem Bye Pass Road
-            </h2>
-            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto font-semibold">
-              Near industrial areas, temples and shopping – ideal for business and family stays.
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
-              <div className="h-48 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
-                <MapPin className="h-24 w-24 text-white opacity-80" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Strategic Location</h3>
-                <p className="text-gray-700">
-                  Just 500m from Salem Bye Pass Road with easy access to industrial zones, temples, and shopping centers.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
-                <Hotel className="h-24 w-24 text-white opacity-80" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Modern Comfort</h3>
-                <p className="text-gray-700">
-                  Clean AC and Non-AC rooms in Karur with WiFi, TV, parking and veg restaurant access.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
-                <Star className="h-24 w-24 text-white opacity-80" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Local Flavor</h3>
-                <p className="text-gray-700">
-                  Authentic South Indian vegetarian dishes at our in-house restaurant. Taste the true flavors of Tamil Nadu.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">What's Nearby</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <MapPin className="h-8 w-8 text-amber-600" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-1">Temples & Heritage</h4>
-                <p className="text-sm text-gray-600">2–5 km from Aditya Inn Karur</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Car className="h-8 w-8 text-amber-600" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-1">Industrial Areas</h4>
-                <p className="text-sm text-gray-600">3–8 km – convenient for business travelers</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Users className="h-8 w-8 text-amber-600" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-1">Shopping Centers</h4>
-                <p className="text-sm text-gray-600">1–3 km for quick errands</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <MapPin className="h-8 w-8 text-amber-600" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-1">Highway Access</h4>
-                <p className="text-sm text-gray-600">Just 500m from Salem Bye Pass Road</p>
-              </div>
-            </div>
-            <div className="mt-6 text-center">
-              <p className="text-gray-700 font-medium">
-                Located at 125/1, near Yamaha Bikes North, Bye Pass Roundana, Salem Bye Pass Road, Karur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Rooms & Suites Section */}
+{/* Rooms & Suites Section */}
       <section id="rooms" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -768,6 +676,96 @@ function App() {
         </div>
       </section>
 
+      {/* Gallery/Experience Section */}
+      <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Hotel in Karur on Salem Bye Pass Road
+            </h2>
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto font-semibold">
+              Near industrial areas, temples and shopping – ideal for business and family stays.
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+              <div className="h-48 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
+                <MapPin className="h-24 w-24 text-white opacity-80" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Strategic Location</h3>
+                <p className="text-gray-700">
+                  Just 500m from Salem Bye Pass Road with easy access to industrial zones, temples, and shopping centers.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+              <div className="h-48 bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+                <Hotel className="h-24 w-24 text-white opacity-80" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Modern Comfort</h3>
+                <p className="text-gray-700">
+                  Clean AC and Non-AC rooms in Karur with WiFi, TV, parking and veg restaurant access.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition">
+              <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
+                <Star className="h-24 w-24 text-white opacity-80" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Local Flavor</h3>
+                <p className="text-gray-700">
+                  Authentic South Indian vegetarian dishes at our in-house restaurant. Taste the true flavors of Tamil Nadu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">What's Nearby</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <MapPin className="h-8 w-8 text-amber-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-1">Temples & Heritage</h4>
+                <p className="text-sm text-gray-600">2–5 km from Aditya Inn Karur</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Car className="h-8 w-8 text-amber-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-1">Industrial Areas</h4>
+                <p className="text-sm text-gray-600">3–8 km – convenient for business travelers</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Users className="h-8 w-8 text-amber-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-1">Shopping Centers</h4>
+                <p className="text-sm text-gray-600">1–3 km for quick errands</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <MapPin className="h-8 w-8 text-amber-600" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-1">Highway Access</h4>
+                <p className="text-sm text-gray-600">Just 500m from Salem Bye Pass Road</p>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-gray-700 font-medium">
+                Located at 125/1, near Yamaha Bikes North, Bye Pass Roundana, Salem Bye Pass Road, Karur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
