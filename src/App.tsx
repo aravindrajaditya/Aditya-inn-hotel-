@@ -136,7 +136,7 @@ function App() {
     <section 
   style={{
     position: 'relative',
-    height: '95vh',
+    height: '40vh',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -161,7 +161,7 @@ function App() {
   <div 
     style={{
       position: 'relative',
-      maxWidth: '384px',
+      maxWidth: '800px',
       margin: '0 auto',
       textAlign: 'center',
       padding: '1rem',
