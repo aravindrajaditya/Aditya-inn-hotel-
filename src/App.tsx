@@ -133,75 +133,51 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-<section className="relative flex justify-center overflow-hidden mt-4 md:mt-16 py-12 md:py-0 md:h-screen">
-  {/* Background Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
-  {/* Pattern Overlay */}
-  <div
-    className="absolute inset-0 opacity-10"
-    style={{
-      backgroundImage:
-        'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-    }}
-  ></div>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+        }}></div>
 
-  {/* Content */}
-  <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col justify-start md:justify-center md:min-h-screen">
-    {/* Offer Badge */}
-    <div className="inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-3 sm:px-4 py-2 rounded-full mb-6 self-center">
-      <Gift className="h-4 w-4 sm:h-5 sm:w-5" />
-      <span className="font-semibold text-xs sm:text-sm md:text-base">
-        Special Discount on Direct Bookings
-      </span>
-    </div>
+        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-amber-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 animate-pulse max-w-[95%] sm:max-w-none">
+            <Gift className="h-3.5 w-3.5 sm:h-5 sm:w-5 flex-shrink-0" />
+            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Best rooms from ₹1,500/night – Book direct and save</span>
+          </div>
 
-    {/* Heading */}
-    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-      Affordable Rooms in Karur
-      <br />
-      <span className="text-amber-600">On Salem Bypass</span>
-    </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Affordable Stay & Restaurant in Karur <span className="text-amber-600">– Salem Bypass</span>
+          </h1>
 
-    {/* Description */}
-    <p className="text-base sm:text-lg md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-      Clean, comfortable and convenient rooms for business, family and transit
-      travelers at Aditya Inn, near Bye Pass Roundana.
-    </p>
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Clean, comfortable and convenient rooms for business, family and transit travelers at Aditya Inn, near Bye Pass Roundana.
+          </p>
 
-    {/* CTAs */}
-    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-      <a
-        href="tel:+919677735969"
-        className="w-full sm:w-auto bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg"
-      >
-        Call to Book Now
-      </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
+              Call to Book Now
+            </a>
+            <a href="https://wa.me/919677735969" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
+              WhatsApp for Best Price
+            </a>
+          </div>
 
-      <a
-        href="#offers"
-        className="w-full sm:w-auto border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg"
-      >
-        WhatsApp for Best Price
-      </a>
-    </div>
-
-    {/* Trust Indicators */}
-    <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-      <div className="flex items-center space-x-2">
-        <Check className="h-4 w-4 text-green-600" />
-        <span>Best Price Guarantee</span>
-      </div>
-      <div className="flex items-center space-x-2">
-        <Check className="h-4 w-4 text-green-600" />
-        <span>No Hidden Fees</span>
-      </div>
-      <div className="flex items-center space-x-2">
-        <Check className="h-4 w-4 text-green-600" />
-        <span>24/7 Support</span>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+            <div className="flex items-center space-x-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>Best Price Guarantee</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>No Hidden Fees</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Check className="h-5 w-5 text-green-600" />
+              <span>24/7 Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Image Carousel Section */}
       <ImageCarousel />
@@ -211,10 +187,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Book Direct?
+              Skip OTAs. Get Better Rates.
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Skip the middleman. Enjoy benefits that third-party platforms simply can't match.
+              Get better rates, flexible check-in and zero hidden fees when you book direct at Aditya Inn, Karur.
             </p>
           </div>
 
@@ -223,9 +199,9 @@ function App() {
               <div className="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Booking Discounts</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Discounts</h3>
               <p className="text-gray-700 mb-6 flex-grow">
-                Planning a family gathering or corporate trip? Get special discounted rates for group bookings of 5+ rooms.
+                Group booking discounts for 5+ rooms – save up to 20% on business and family stays.
               </p>
               <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full font-semibold text-center">
                 Save up to 20%
@@ -236,9 +212,9 @@ function App() {
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Gift className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Room + Meal Combos</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Room + Meal Packages</h3>
               <p className="text-gray-700 mb-6 flex-grow">
-                Indulge in our specially curated packages combining premium rooms with authentic meals at our in-house restaurant.
+                Room + meal combos with our in-house veg restaurant.
               </p>
               <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-semibold text-center">
                 Special Package Rates
@@ -249,9 +225,9 @@ function App() {
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Loyalty Rewards</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Repeat Guest Benefits</h3>
               <p className="text-gray-700 mb-6 flex-grow">
-                Book twice, save forever. Repeat guests enjoy exclusive discounts, room upgrades, and priority reservations.
+                Loyalty rewards – 10% lifetime discount for repeat guests.
               </p>
               <span className="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center">
                 10% lifetime discount
@@ -260,23 +236,24 @@ function App() {
           </div>
 
           <div className="mt-12 bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-3xl font-bold mb-4">Plus: Zero Hidden Fees</h3>
+            <h3 className="text-3xl font-bold mb-4">Zero Hidden Fees</h3>
             <p className="text-xl mb-6">
               No booking fees. No service charges. No commission markup. The price you see is the price you pay.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
                 <Check className="h-5 w-5" />
-                <span>Early Check-in (Subject to availability)</span>
+                <span>Early check-in / late check-out (subject to availability)</span>
               </div>
               <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
                 <Check className="h-5 w-5" />
-                <span>Late Check-out Options</span>
+                <span>Direct customer support</span>
               </div>
-              <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
-                <Check className="h-5 w-5" />
-                <span>Direct Customer Support</span>
-              </div>
+            </div>
+            <div className="mt-6">
+              <a href="tel:+919677735969" className="bg-white text-amber-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold inline-block">
+                Call Now for Direct Booking Offer
+              </a>
             </div>
           </div>
         </div>
@@ -289,9 +266,9 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Hotel in Karur on Salem Bye Pass Road
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto font-semibold">
               Near industrial areas, temples and shopping – ideal for business and family stays.
-            </p>
+            </h3>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -302,7 +279,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Strategic Location</h3>
                 <p className="text-gray-700">
-                  Minutes from major industrial zones, business hubs, and highway connections. Easy access to temples, markets, and local attractions.
+                  Just 500m from Salem Bye Pass Road with easy access to industrial zones, temples, and shopping centers.
                 </p>
               </div>
             </div>
@@ -314,7 +291,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Modern Comfort</h3>
                 <p className="text-gray-700">
-                  Thoughtfully designed interiors with warm lighting, premium bedding, and contemporary amenities that make you feel at home.
+                  Clean AC and Non-AC rooms in Karur with WiFi, TV, parking and veg restaurant access.
                 </p>
               </div>
             </div>
@@ -326,44 +303,48 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Local Flavor</h3>
                 <p className="text-gray-700">
-                  Enjoy authentic South Indian vegetarian dishes, freshly prepared and served with care.
-Taste the true flavors of Tamil Nadu right here at Aditya Inn.
+                  Authentic South Indian vegetarian dishes at our in-house restaurant. Taste the true flavors of Tamil Nadu.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">Nearby Attractions</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">What's Nearby</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <MapPin className="h-8 w-8 text-amber-600" />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-1">Temples & Heritage</h4>
-                <p className="text-sm text-gray-600">2-5 km</p>
+                <p className="text-sm text-gray-600">2–5 km from Aditya Inn Karur</p>
               </div>
               <div className="text-center">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Car className="h-8 w-8 text-amber-600" />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-1">Industrial Areas</h4>
-                <p className="text-sm text-gray-600">3-8 km</p>
+                <p className="text-sm text-gray-600">3–8 km – convenient for business travelers</p>
               </div>
               <div className="text-center">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Users className="h-8 w-8 text-amber-600" />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-1">Shopping Centers</h4>
-                <p className="text-sm text-gray-600">1-3 km</p>
+                <p className="text-sm text-gray-600">1–3 km for quick errands</p>
               </div>
               <div className="text-center">
                 <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <MapPin className="h-8 w-8 text-amber-600" />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-1">Highway Access</h4>
-                <p className="text-sm text-gray-600">500m</p>
+                <p className="text-sm text-gray-600">Just 500m from Salem Bye Pass Road</p>
               </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-gray-700 font-medium">
+                Located at 125/1, near Yamaha Bikes North, Bye Pass Roundana, Salem Bye Pass Road, Karur.
+              </p>
             </div>
           </div>
         </div>
@@ -374,10 +355,10 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Choose Your Perfect Stay
+              Clean Rooms in Karur from ₹1,500/night
             </h2>
             <p className="text-xl text-gray-600">
-              Every room designed with your comfort and convenience in mind
+              AC and Non-AC options available for solo travelers, couples, and families
             </p>
           </div>
 
@@ -388,13 +369,13 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900">Standard Room</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Standard Room – from ₹1,500/night</h3>
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
                     Popular
                   </span>
                 </div>
-                <p className="text-gray-700 mb-4 text-sm">
-                  Perfect for business travelers and solo adventurers. Clean, comfortable rooms from  ₹1,500 with essential amenities.
+                <p className="text-gray-700 mb-4 text-sm font-medium">
+                  Best for solo and business travelers
                 </p>
                 <p className="text-sm text-gray-600 mb-4 italic">Available in AC and Non-AC options</p>
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -435,9 +416,9 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 <Hotel className="h-20 w-20 text-white opacity-70" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Deluxe Room</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Deluxe Room – ideal for couples</h3>
                 <p className="text-gray-700 mb-4 text-sm">
-                  Spacious comfort for couples and small families. Enhanced space with all the essential amenities.
+                  Enhanced space with all essential amenities for small families.
                 </p>
                 <p className="text-sm text-gray-600 mb-4 italic">Available in AC and Non-AC options</p>
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -475,9 +456,9 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 <Hotel className="h-20 w-20 text-white opacity-70" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Suite Room</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Suite Room – spacious for families</h3>
                 <p className="text-gray-700 mb-4 text-sm">
-                  Premium space for families and extended stays. Maximum comfort with extra room to relax.
+                  Maximum comfort with extra room for families and long stays.
                 </p>
                 <p className="text-sm text-gray-600 mb-4 italic">Available in AC and Non-AC options</p>
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -512,7 +493,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-4">All rooms include: Bed, WiFi, TV, Chair, Kettle, Toiletries</p>
+            <p className="text-gray-600 mb-4">All budget hotel rooms in Karur include: Bed, WiFi, TV, Chair, Kettle, Toiletries</p>
             <div className="flex justify-center gap-6 flex-wrap">
               <div className="flex items-center text-gray-700">
                 <Wifi className="h-5 w-5 text-amber-600 mr-2" />
@@ -540,10 +521,10 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Rated 4.9/5 by 45+ guests on Review
+              Rated 4.9/5 by 45+ Guests
             </h2>
-            <p className="text-2xl text-gray-600">
-             What Our Guests Say
+            <p className="text-xl text-gray-600">
+              Reviews from Justdial and other platforms
             </p>
           </div>
 
@@ -555,15 +536,15 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
-                "We stayed at Aditya Inn for a weekend getaway and were thoroughly impressed. The room was clean, quiet, and had all the essential amenities. The staff was incredibly attentive and went above and beyond to ensure we had a comfortable stay. We especially enjoyed the delicious food at the restaurant."
+                "Clean rooms and great food. The room was clean, quiet, and had all the essential amenities. The staff was incredibly attentive and we especially enjoyed the delicious food at the restaurant."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-amber-700 font-bold text-xl">JD</span>
+                  <span className="text-amber-700 font-bold text-xl">VG</span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">Justdial Review</p>
-                  <p className="text-sm text-gray-600">Clean rooms and great food</p>
+                  <p className="font-bold text-gray-900">Clean rooms and great food</p>
+                  <p className="text-sm text-gray-600">Justdial Review</p>
                 </div>
               </div>
             </div>
@@ -575,15 +556,15 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
-                "Nice property. All staff and owner have good approach with customers. Car parking is available at this property. Located near Karur city, very convenient location on Salem Bye Pass Road."
+                "Convenient location on Salem Bye Pass Road. All staff and owner have good approach with customers. Car parking is available at this property."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mr-4">
                   <span className="text-green-700 font-bold text-xl">LT</span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">Local Traveler</p>
-                  <p className="text-sm text-gray-600">Convenient location on Salem Bye Pass Road</p>
+                  <p className="font-bold text-gray-900">Convenient location on Salem Bye Pass Road</p>
+                  <p className="text-sm text-gray-600">Justdial Review</p>
                 </div>
               </div>
             </div>
@@ -595,15 +576,15 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
-                "Good hotel with spacious rooms and all necessary amenities. The location on Salem Bye Pass Road is perfect for travelers. Staff is helpful and attentive. Great value for money and comfortable stay."
+                "Spacious rooms and value for money. The location on Salem Bye Pass Road is perfect for travelers. Staff is helpful and attentive. Great value for money."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center mr-4">
                   <span className="text-blue-700 font-bold text-xl">BT</span>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">Business Traveler</p>
-                  <p className="text-sm text-gray-600">Spacious rooms and value for money</p>
+                  <p className="font-bold text-gray-900">Spacious rooms and value for money</p>
+                  <p className="text-sm text-gray-600">Verified Review</p>
                 </div>
               </div>
             </div>
@@ -638,7 +619,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Call to Book Now
+            Book Today & Save
           </h2>
 
           <p className="text-xl mb-8 opacity-95">
@@ -647,7 +628,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="tel:+919677735969" className="bg-white text-amber-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg transform hover:scale-105 inline-block">
-              Call to Book Now
+              Reserve Your Room Now
             </a>
             <a href="tel:+919994409412" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-bold text-lg inline-block">
               Call Us: +91 96777 35969
@@ -691,7 +672,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp for Best Price</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
               <p className="text-gray-700 mb-2">Quick Response</p>
               <a href="https://wa.me/919677735969" className="text-green-600 font-bold text-lg hover:text-green-700">
                 Chat with us
@@ -734,7 +715,7 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
                 <span className="text-2xl font-bold">Aditya Inn</span>
               </div>
               <p className="text-gray-400">
-                Enjoy a clean, comfortable, and affordable stay — Aditya Inn Karur.
+                Budget hotel in Karur offering clean, comfortable, and affordable stay on Salem Bye Pass Road.
               </p>
             </div>
 
@@ -784,5 +765,4 @@ Taste the true flavors of Tamil Nadu right here at Aditya Inn.
     </div>
   );
 }
-
 export default App;
