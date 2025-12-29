@@ -308,83 +308,6 @@ function App() {
 
       {/* Image Carousel Section */}
       <ImageCarousel />
-
-      {/* Exclusive Offers Section */}
-      <section id="offers" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Skip OTAs. Get Better Rates.
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Get better rates, flexible check-in and zero hidden fees when you book direct at Aditya Inn, Karur.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Discounts</h3>
-              <p className="text-gray-700 mb-6 flex-grow">
-                Group booking discounts for 5+ rooms – save up to 20% on business and family stays.
-              </p>
-              <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full font-semibold text-center">
-                Save up to 20%
-              </span>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Gift className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Room + Meal Packages</h3>
-              <p className="text-gray-700 mb-6 flex-grow">
-                Room + meal combos with our in-house veg restaurant.
-              </p>
-              <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-semibold text-center">
-                Special Package Rates
-              </span>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Repeat Guest Benefits</h3>
-              <p className="text-gray-700 mb-6 flex-grow">
-                Loyalty rewards – 10% lifetime discount for repeat guests.
-              </p>
-              <span className="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center">
-                10% lifetime discount
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-12 bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl p-8 text-white text-center">
-            <h3 className="text-3xl font-bold mb-4">Zero Hidden Fees</h3>
-            <p className="text-xl mb-6">
-              No booking fees. No service charges. No commission markup. The price you see is the price you pay.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
-                <Check className="h-5 w-5" />
-                <span>Early check-in / late check-out (subject to availability)</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
-                <Check className="h-5 w-5" />
-                <span>Direct customer support</span>
-              </div>
-            </div>
-            <div className="mt-6">
-              <a href="tel:+919677735969" className="bg-white text-amber-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold inline-block">
-                Call Now for Direct Booking Offer
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 {/* Rooms & Suites Section */}
       <section id="rooms" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -550,7 +473,83 @@ function App() {
           </div>
         </div>
       </section>
+      
+      {/* Exclusive Offers Section */}
+      <section id="offers" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Skip OTAs. Get Better Rates.
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Get better rates, flexible check-in and zero hidden fees when you book direct at Aditya Inn, Karur.
+            </p>
+          </div>
 
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Discounts</h3>
+              <p className="text-gray-700 mb-6 flex-grow">
+                Group booking discounts for 5+ rooms – save up to 20% on business and family stays.
+              </p>
+              <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full font-semibold text-center">
+                Save up to 20%
+              </span>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Gift className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Room + Meal Packages</h3>
+              <p className="text-gray-700 mb-6 flex-grow">
+                Room + meal combos with our in-house veg restaurant.
+              </p>
+              <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-semibold text-center">
+                Special Package Rates
+              </span>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Star className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Repeat Guest Benefits</h3>
+              <p className="text-gray-700 mb-6 flex-grow">
+                Loyalty rewards – 10% lifetime discount for repeat guests.
+              </p>
+              <span className="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center">
+                10% lifetime discount
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl p-8 text-white text-center">
+            <h3 className="text-3xl font-bold mb-4">Zero Hidden Fees</h3>
+            <p className="text-xl mb-6">
+              No booking fees. No service charges. No commission markup. The price you see is the price you pay.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
+                <Check className="h-5 w-5" />
+                <span>Early check-in / late check-out (subject to availability)</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
+                <Check className="h-5 w-5" />
+                <span>Direct customer support</span>
+              </div>
+            </div>
+            <div className="mt-6">
+              <a href="tel:+919677735969" className="bg-white text-amber-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold inline-block">
+                Call Now for Direct Booking Offer
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Guest Reviews Section */}
       <section id="reviews" className="py-20 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
