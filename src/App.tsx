@@ -27,7 +27,8 @@ function ImageCarousel() {
 
   const getVisibleImages = () => {
     const visible = [];
-    for (let i = -2; i <= 2; i++) {
+    const maxPositions = window.innerWidth < 640 ? 1 : 2;
+    for (let i = -maxPositions; i <= maxPositions; i++) {
       const index = (currentIndex + i + images.length) % images.length;
       visible.push({ index, position: i });
     }
@@ -38,20 +39,22 @@ function ImageCarousel() {
     <section className="py-20 bg-gradient-to-b from-white to-amber-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Experience <span className="text-amber-600">Aditya Inn</span>
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600">
             A glimpse into comfort and elegance
           </p>
         </div>
 
-        <div className="relative h-96 flex items-center justify-center">
+        <div className="relative h-64 sm:h-96 flex items-center justify-center">
           {getVisibleImages().map(({ index, position }) => {
-            const scale = position === 0 ? 1 : Math.max(0.6 - Math.abs(position) * 0.15, 0.4);
-            const opacity = position === 0 ? 1 : Math.max(0.4 - Math.abs(position) * 0.1, 0.2);
+            const isMobile = window.innerWidth < 640;
+            const baseTranslateX = isMobile ? 120 : 280;
+            const scale = position === 0 ? 1 : Math.max(0.65 - Math.abs(position) * 0.15, 0.45);
+            const opacity = position === 0 ? 1 : Math.max(0.5 - Math.abs(position) * 0.1, 0.3);
             const zIndex = 50 - Math.abs(position);
-            const translateX = position * 280;
+            const translateX = position * baseTranslateX;
 
             return (
               <div
@@ -61,8 +64,8 @@ function ImageCarousel() {
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   opacity: opacity,
                   zIndex: zIndex,
-                  width: '400px',
-                  height: '300px',
+                  width: isMobile ? '280px' : '400px',
+                  height: isMobile ? '210px' : '300px',
                 }}
               >
                 <img
@@ -116,8 +119,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Hotel className="h-8 w-8 text-amber-600" />
-              <span className="text-2xl font-bold text-gray-900">Aditya Inn</span>
+              <Hotel className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600" />
+              <span className="text-lg sm:text-2xl font-bold text-gray-900">Aditya Inn</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#offers" className="text-gray-700 hover:text-amber-600 transition">Offers</a>
@@ -125,7 +128,7 @@ function App() {
               <a href="#reviews" className="text-gray-700 hover:text-amber-600 transition">Reviews</a>
               <a href="#contact" className="text-gray-700 hover:text-amber-600 transition">Contact</a>
             </div>
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-semibold">
+            <a href="tel:+919677735969" className="bg-amber-600 text-white px-3 sm:px-6 py-2 rounded-lg hover:bg-amber-700 transition font-semibold text-sm sm:text-base">
               Book Now
             </a>
           </div>
@@ -133,7 +136,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16 py-12 sm:py-0">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100"></div>
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23d97706\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
@@ -145,24 +148,24 @@ function App() {
             <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Best rooms from ₹1,500/night – Book direct and save</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
             Affordable Stay & Restaurant in Karur <span className="text-amber-600">– Salem Bypass</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-2xl text-gray-700 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Clean, comfortable and convenient rooms for business, family and transit travelers at Aditya Inn, near Bye Pass Roundana.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 w-full px-4">
+            <a href="tel:+919677735969" className="bg-amber-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-amber-700 transition font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block w-full sm:w-auto text-center">
               Call to Book Now
             </a>
-            <a href="https://wa.me/919677735969" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
+            <a href="https://wa.me/919677735969" className="border-2 border-amber-600 text-amber-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-amber-50 transition font-bold text-base sm:text-lg w-full sm:w-auto text-center">
               WhatsApp for Best Price
             </a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <Check className="h-5 w-5 text-green-600" />
               <span>Best Price Guarantee</span>
@@ -186,20 +189,20 @@ function App() {
       <section id="offers" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Skip OTAs. Get Better Rates.
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Get better rates, flexible check-in and zero hidden fees when you book direct at Aditya Inn, Karur.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-5 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-amber-600 w-14 sm:w-16 h-14 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <Users className="h-7 sm:h-8 w-7 sm:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Discounts</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Group Discounts</h3>
               <p className="text-gray-700 mb-6 flex-grow">
                 Group booking discounts for 5+ rooms – save up to 20% on business and family stays.
               </p>
@@ -208,11 +211,11 @@ function App() {
               </span>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Gift className="h-8 w-8 text-white" />
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-blue-600 w-14 sm:w-16 h-14 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <Gift className="h-7 sm:h-8 w-7 sm:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Room + Meal Packages</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Room + Meal Packages</h3>
               <p className="text-gray-700 mb-6 flex-grow">
                 Room + meal combos with our in-house veg restaurant.
               </p>
@@ -221,11 +224,11 @@ function App() {
               </span>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
-              <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-white" />
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-5 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col h-full">
+              <div className="bg-green-600 w-14 sm:w-16 h-14 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                <Star className="h-7 sm:h-8 w-7 sm:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Repeat Guest Benefits</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Repeat Guest Benefits</h3>
               <p className="text-gray-700 mb-6 flex-grow">
                 Loyalty rewards – 10% lifetime discount for repeat guests.
               </p>
@@ -263,10 +266,10 @@ function App() {
       <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Hotel in Karur on Salem Bye Pass Road
             </h2>
-            <h3 className="text-xl text-gray-600 max-w-3xl mx-auto font-semibold">
+            <h3 className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-semibold">
               Near industrial areas, temples and shopping – ideal for business and family stays.
             </h3>
           </div>
@@ -354,10 +357,10 @@ function App() {
       <section id="rooms" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Clean Rooms in Karur from ₹1,500/night
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               AC and Non-AC options available for solo travelers, couples, and families
             </p>
           </div>
@@ -520,15 +523,15 @@ function App() {
       <section id="reviews" className="py-20 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Rated 4.9/5 by 45+ Guests
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               Reviews from Justdial and other platforms
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -618,11 +621,11 @@ function App() {
             <span className="font-semibold">Festive Season Special: Limited Time Only!</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             Book Today & Save
           </h2>
 
-          <p className="text-xl mb-8 opacity-95">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-95">
             Don't miss out on our exclusive direct booking discount. Experience genuine hospitality, transparent pricing, and rewards that booking platforms will never offer you.
           </p>
 
@@ -645,15 +648,15 @@ function App() {
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               We're here to help 24/7
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-12">
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
               <div className="bg-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-white" />
