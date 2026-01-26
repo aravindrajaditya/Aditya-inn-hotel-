@@ -126,7 +126,7 @@ function App() {
               <a href="#reviews" className="text-gray-700 hover:text-amber-600 transition">Reviews</a>
               <a href="#contact" className="text-gray-700 hover:text-amber-600 transition">Contact</a>
             </div>
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-semibold">
+            <a href="tel:+919677735969" onclick="return gtag_report_conversion('tel:+919677735969');" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-semibold">
               Book Now
             </a>
           </div>
@@ -143,7 +143,7 @@ function App() {
         <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-amber-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 animate-pulse max-w-[95%] sm:max-w-none">
             <Gift className="h-3.5 w-3.5 sm:h-5 sm:w-5 flex-shrink-0" />
-            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Best rooms from ₹1,500/night – Book direct and save</span>
+            <span className="font-semibold text-[10px] sm:text-sm md:text-base whitespace-nowrap">Best rooms from ₹1,500 – Book direct and save</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -155,10 +155,10 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+919677735969" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
+            <a href="tel:+919677735969" onclick="return gtag_report_conversion('tel:+919677735969');" className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block">
               Call to Book Now
             </a>
-            <a href="https://wa.me/919677735969" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
+            <a href="https://wa.me/919677735969" onclick="return gtag_report_conversion('https://wa.me/919677735969');" className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-50 transition font-bold text-lg">
               WhatsApp for Best Price
             </a>
           </div>
@@ -252,7 +252,7 @@ function App() {
               </div>
             </div>
             <div className="mt-6">
-              <a href="tel:+919677735969" className="bg-white text-amber-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold inline-block">
+              <a href="tel:+919677735969" onclick="return gtag_report_conversion('tel:+919677735969');" className="bg-white text-amber-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold inline-block">
                 Call Now for Direct Booking Offer
               </a>
             </div>
@@ -628,10 +628,10 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="tel:+919677735969" className="bg-white text-amber-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg transform hover:scale-105 inline-block">
+            <a href="tel:+919677735969" onclick="return gtag_report_conversion('tel:+919677735969');" className="bg-white text-amber-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg transform hover:scale-105 inline-block">
               Reserve Your Room Now
             </a>
-            <a href="tel:+919994409412" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-bold text-lg inline-block">
+            <a href="tel:+919994409412" onclick="return gtag_report_conversion('tel:+919994409412');" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-bold text-lg inline-block">
               Call Us: +91 96777 35969
             </a>
           </div>
@@ -661,10 +661,10 @@ function App() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Call Us</h3>
               <p className="text-gray-700 mb-2">Available 24/7</p>
-              <a href="tel:+919677735969" className="text-amber-600 font-bold text-lg hover:text-amber-700">
+              <a href="tel:+919677735969" onclick="return gtag_report_conversion('tel:+919677735969');"  className="text-amber-600 font-bold text-lg hover:text-amber-700">
                 +91 96777 35969
               </a>
-              <a href="tel:+919994409412" className="text-amber-600 font-bold text-lg hover:text-amber-700 block mt-2">
+              <a href="tel:+919994409412" onclick="return gtag_report_conversion('tel:+919994409412');" className="text-amber-600 font-bold text-lg hover:text-amber-700 block mt-2">
                 +91 99944 09412
               </a>
             </div>
@@ -675,7 +675,7 @@ function App() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
               <p className="text-gray-700 mb-2">Quick Response</p>
-              <a href="https://wa.me/919677735969" className="text-green-600 font-bold text-lg hover:text-green-700">
+              <a href="https://wa.me/919677735969" onclick="return gtag_report_conversion('https://wa.me/919677735969');" className="text-green-600 font-bold text-lg hover:text-green-700">
                 Chat with us
               </a>
             </div>
@@ -698,7 +698,7 @@ function App() {
               <MapPin className="h-5 w-5 text-amber-600 mr-2" />
               125/1, Yamaha Bikes North, Salem Bye Pass Road, Bye Pass Roundana, Karur, Tamil Nadu
             </p>
-            <a href="https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjpDxAKGBcSBwjpDxAKGBgYATICEAAqBwoFOgNJTlI&qs=CAEyFENnc0k3T2FpdnJEMXp0SzVBUkFCOAhCCRE7db_Gd6P4C0IJEaiXFTQbgoUdQgkRfaVk6movl2RaOTI3qgE0EAEyHxABIhvymLx3ujIemifL0Y8qolduxmCVh3MK8Aq-acYyDxACIgthZGl0aHlhIGlubg&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls" target="_blank" rel="noopener noreferrer" className="mt-4 bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition font-semibold inline-flex items-center">
+            <a href="https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjpDxAKGBcSBwjpDxAKGBgYATICEAAqBwoFOgNJTlI&qs=CAEyFENnc0k3T2FpdnJEMXp0SzVBUkFCOAhCCRE7db_Gd6P4C0IJEaiXFTQbgoUdQgkRfaVk6movl2RaOTI3qgE0EAEyHxABIhvymLx3ujIemifL0Y8qolduxmCVh3MK8Aq-acYyDxACIgthZGl0aHlhIGlubg&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls" target="_blank" rel="noopener noreferrer"  onclick="return gtag_report_conversion('https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjpDxAKGBcSBwjpDxAKGBgYATICEAAqBwoFOgNJTlI&qs=CAEyFENnc0k3T2FpdnJEMXp0SzVBUkFCOAhCCRE7db_Gd6P4C0IJEaiXFTQbgoUdQgkRfaVk6movl2RaOTI3qgE0EAEyHxABIhvymLx3ujIemifL0Y8qolduxmCVh3MK8Aq-acYyDxACIgthZGl0aHlhIGlubg&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls');"className="mt-4 bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition font-semibold inline-flex items-center">
               <MapPin className="h-5 w-5 mr-2" />
               Open in Google Maps
             </a>
