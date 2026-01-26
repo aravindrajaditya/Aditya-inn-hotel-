@@ -15,9 +15,7 @@
 
   gtag('config', 'AW-17176008589');
 </script>
-    <!-- Event snippet for Click to call conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<!-- Event snippet for Contact conversion page
+ <!-- Event snippet for Click to call (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
@@ -27,12 +25,15 @@ function gtag_report_conversion(url) {
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-17176008589/_7H9CIbR1-cbEI2vlP4_',
+      'send_to': 'AW-17176008589/05MtCKP5ku0bEI2vlP4_',
+      'value': 1.0,
+      'currency': 'INR',
       'event_callback': callback
   });
   return false;
 }
 </script>
+
 
   </head>
   <body>
